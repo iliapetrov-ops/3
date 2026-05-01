@@ -1,4 +1,4 @@
-// Файл: homeworks/hw20.rs
+
 
 fn breaking_records(scores: &[i32]) -> Vec<i32> {
     if scores.is_empty() {
@@ -27,7 +27,6 @@ fn main() {
     let stdin = io::stdin();
     let mut lines = stdin.lock().lines();
 
-    // Читаємо кількість ігор
     let n: usize = lines
         .next()
         .unwrap()
@@ -36,7 +35,6 @@ fn main() {
         .parse()
         .expect("Invalid number of games");
     
-    // Читаємо очки
     let scores_line = lines.next().unwrap().unwrap();
     let scores: Vec<i32> = scores_line
         .split_whitespace()
